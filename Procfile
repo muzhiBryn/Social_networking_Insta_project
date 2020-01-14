@@ -1,0 +1,1 @@
+web: gunicorn InstaSNS.wsgi --log-file -
