@@ -1,16 +1,14 @@
-
-
 <div class="navbar navbar-default navbar-fixed-top" id="main-nav">
     <div class="container desktop">
         <div class="navbar-header">
-            <a href="{% url 'posts' %}" class="navbar-brand">Jiuzhang Insta</a>
+            <a href="{% url 'posts' %}" class="navbar-brand">Marinda Insta</a>
         </div>
 
         <div id="navbar-main">
             <ul class="nav navbar-nav navbar-right">
                 {% if request.user.is_authenticated %}
                     <li>
-                      <a href="{% url 'home' %}">
+                      <a href="{% url 'posts' %}">
                         <i class="fa fa-home" aria-hidden="true"></i>
                       </a>
                     </li>
@@ -30,3 +28,6 @@
         </div>
     </div>
 </div>
+
+
+
